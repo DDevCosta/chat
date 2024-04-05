@@ -11,12 +11,12 @@
     font-size: 16px;
 }
 
-body{
+body {
     background: url("../img/background3.jpg");
     color: #f2f2f2;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100dvh;
     display: flex;
@@ -24,7 +24,7 @@ body{
     justify-content: center;
 }
 
-.login{
+.login {
     width: 100%;
     max-width: 330px;
     background-color: #212121;
@@ -32,20 +32,20 @@ body{
     padding: 20px;
 }
 
-.login > h2{
+.login > h2 {
     text-align: center;
     font-weight: 600;
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-.login__form{
+.login__form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.login__input{
+.login__input {
     border: none;
     padding: 15px;
     font-size: 0.85rem;
@@ -56,26 +56,26 @@ body{
     border-radius: 5px;
 }
 
-.login__input:focus{
-    outline: 1px solid #f2f2f2;
+.login__input:focus {
+    outline: 2px solid #f2f2f2;
 }
 
-.login__button{
+.login__button {
     border: none;
     padding: 15px;
     border-radius: 5px;
     font-size: 0.85rem;
-    font-weight: 800;
-    background-color: #f2f2f2;
+    font-weight: 700;
+    background-color: #fff;
     cursor: pointer;
     color: #121212;
 }
 
-.login__button:hover{
+.login__button:hover {
     background-color: #ddd;
 }
 
-.chat{
+.chat {
     width: 100%;
     height: 100%;
     display: none;
@@ -83,15 +83,16 @@ body{
     justify-content: space-between;
 }
 
-.chat__messages{
+.chat__messages {
     flex-grow: 1;
     padding: 30px 30px 90px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow-y: auto;
 }
 
-.chat__form{
+.chat__form {
     background-color: #191919;
     padding: 15px 20px;
     display: flex;
@@ -103,7 +104,7 @@ body{
     width: 100%;
 }
 
-.chat__input{
+.chat__input {
     border: none;
     padding: 15px;
     border-radius: 8px;
@@ -114,18 +115,18 @@ body{
     font-size: 1rem;
 }
 
-.chat__button{
+.chat__button {
     border: none;
     background: none;
     color: #f2f2f2;
     cursor: pointer;
 }
 
-.chat__button > span{
+.chat__button > span {
     font-size: 1.8rem;
 }
 
-.chat__messages > div{
+.chat__messages > div {
     padding: 10px;
     width: 100%;
     max-width: 250px;
@@ -135,21 +136,23 @@ body{
     line-height: 22px;
 }
 
-.message--self{   
+.message--self {
     background-color: #f2f2f2;
     color: #121212;
     border-radius: 10px 10px 0 10px;
     align-self: flex-end;
+    word-wrap: break-word;
 }
 
-.message--other{   
+.message--other {
     background-color: #333;
     color: #f2f2f2;
-    border-radius: 0px 10px 10px 10px;
+    border-radius: 0 10px 10px 10px;
     align-self: flex-start;
+    word-wrap: break-word;
 }
 
-.message--sender{
+.message--sender {
     display: block;
     margin-bottom: 15px;
     font-weight: 700;
