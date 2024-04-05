@@ -83,7 +83,7 @@ const handleLogin = (event) => {
     login.style.display = "none"
     chat.style.display = "flex"
 
-    websocket = new WebSocket("wss://https://chat-ddev.onrender.com")
+    websocket = new WebSocket("wss://https://glittering-pie-389bcd.netlify.app")
     websocket.onmessage = processMessage
 }
 
